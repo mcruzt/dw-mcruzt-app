@@ -3,6 +3,8 @@ import {Routes, RouterModule} from '@angular/router';
 
 import {HomeComponent} from './home.component';
 import {CharacterComponent} from './character/character.component';
+import {EpisodeComponent} from './episode/episode.component';
+import {LocationComponent} from './location/location.component';
 
 const routes: Routes = [{
   path: '',
@@ -10,6 +12,12 @@ const routes: Routes = [{
   children: [{
     path: 'character',
     component: CharacterComponent
+  }, {
+    path: 'location',
+    component: LocationComponent
+  }, {
+    path: 'episode',
+    component: EpisodeComponent
   }]
 }
 ];
