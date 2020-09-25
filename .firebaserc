@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "dw-mcruzt-app": {
+      "hosting": {
+        "dw-mcruzt-app": [
+          "dw-mcruzt-app"
+        ]
+      }
+    }
+  }
+}
