@@ -10,4 +10,5 @@ export const environment = {
     appId: '1:179797255850:web:272163e09cd5f4137f12d3'
   },
   routeHome: '/home'
+
 };
