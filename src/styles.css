@@ -4,16 +4,6 @@ body { margin: 0; background-color: #ededed; }
   min-height:100%;
   position:relative;
 }
-.login-content{
-  width: 100%;
-  margin-top: 15px;
-  text-align: center;
-}
-.login-card {
-  width: 350px;
-  margin: auto;
-  padding: 15px !important;
-}
 .tab-content {
   width: 100%;
   margin-top: 15px;
@@ -30,7 +20,9 @@ body { margin: 0; background-color: #ededed; }
   color: #ededed;
   padding: 15px;
   border-radius: 10px 10px 0px 0px;
+  min-height: 70px;
 }
+
 
 .card .mat-card-content{
   background-color: #607c8a;
@@ -64,7 +56,7 @@ body { margin: 0; background-color: #ededed; }
 }
 
 .pnl-img img{
-  max-width: 300px;
+  width: 90%;
 }
 
 .img-small {
