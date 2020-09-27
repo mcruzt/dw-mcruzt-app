@@ -4,7 +4,7 @@
                 [hidePageSize]="true">
 </mat-paginator>
 <main class="tab-content">
-  <mat-grid-list cols="3" rowHeight="1:1">
+  <mat-grid-list [cols]="numRows" rowHeight="500">
     <mat-grid-tile *ngFor="let item  of list">
       <mat-card class="card">
         <mat-card-header>
@@ -20,8 +20,8 @@
             Estatus: <span class="text-white">{{item.status}}</span>
           </mat-card-subtitle>
         </mat-card-header>
-        <div class="pnl-img">
-          <img mat-card-image [src]="item.image" alt="Personaje">
+        <div class="pnl-img" >
+          <img mat-card-image style="max-height: 70%" [src]="item.image" alt="Personaje">
         </div>
       </mat-card>
     </mat-grid-tile>

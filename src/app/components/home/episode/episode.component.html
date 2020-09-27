@@ -4,7 +4,7 @@
                [hidePageSize]="true">
 </mat-paginator>
 <main class="tab-content">
-  <mat-grid-list cols="3" rowHeight="3:2">
+  <mat-grid-list [cols]="numRows" rowHeight="350">
     <mat-grid-tile *ngFor="let item  of list">
       <mat-card class="card">
         <mat-card-header>

@@ -17,9 +17,25 @@ export class EpisodeComponent implements OnInit {
   length = 0;
   pageSize = 20;
   pageEvent: PageEvent;
+  numRows = 3;
   constructor(private episodeService: EpisodeService, private characterService: CharacterService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
+    const toMatch = [
+      /Android/i,
+      /webOS/i,
+      /iPhone/i,
+      /iPad/i,
+      /iPod/i,
+      /BlackBerry/i,
+      /Windows Phone/i
+    ];
+
+    toMatch.some((toMatchItem) => {
+     if (navigator.userAgent.match(toMatchItem)){
+       this.numRows = 1;
+     }
+    });
     this.loadData({pageIndex: 0});
   }
   loadData(e): any {
